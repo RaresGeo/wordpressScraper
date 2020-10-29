@@ -33,5 +33,5 @@ for word in substrings:
             match = match.a
             start = match['href']
         else:
-            output.write('\n')
+            output.write('A total of ' + count + ' instances\n')
             break
