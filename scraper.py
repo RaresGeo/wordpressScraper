@@ -19,7 +19,7 @@ for word in substrings:
 
         soup = BeautifulSoup(source, 'lxml')
 
-        text_ = soup.find('div', class_='entry-wrapper')
+        text_ = soup.find('div', class_='entry-content')
         if text_:
             length = len(re.findall(word, text_.text, re.IGNORECASE))
             count += length
